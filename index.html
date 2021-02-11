@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Барбершоп</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-header">
+        <ul class="nav-links">
+          <li><a href="#">ИНФОРМАЦИЯ</a></li>
+          <li><a href="#">НОВОСТИ</a></li>
+          <li><a href="#">ПРАЙС-ЛИСТ</a></li>
+          <li><a href="#">МАГАЗИН</a></li>
+          <li><a href="#">КОНТАКТЫ</a></li>
+        </ul>
+        <div class="login">
+          <a href="#">ВХОД</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="login-input">
+        <form class="login-form" name="login-form" action="">
+          <label>
+            <p>ЛОГИН</p>
+            <input class="" type="text" />
+          </label>
+          <label>
+            <p>ПАРОЛЬ</p>
+            <input class="" type="text" />
+          </label>
+          <input
+            class="btn btn-big"
+            name="submit"
+            value="ОТПРАВИТЬ"
+            type="submit"
+          />
+          <input
+            class="btn btn-big close"
+            name="close"
+            value="ЗАКРЫТЬ"
+            type="button"
+          />
+        </form>
+      </div>
+      <img class="logo" src="img/index-logo.png" alt="LOGO" />
+
+      <section class="advantages">
+        <div class="adv-part">
+          <h2>БЫСТРО</h2>
+          <img src="img/Shape 1.png" alt="" />
+          <p>
+            МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ —
+            СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
+          </p>
+        </div>
+
+        <div class="adv-part">
+          <h2>КРУТО</h2>
+          <img src="img/Shape 1.png" alt="" />
+          <p>
+            ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА
+            ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+          </p>
+        </div>
+
+        <div class="adv-part">
+          <h2>ДОРОГО</h2>
+          <img src="img/Shape 1.png" alt="" />
+          <p>
+            НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К
+            ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h3 class="">НОВОСТИ</h3>
+          <div class="small-container">
+            <p class="simple-text">
+              НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ
+              СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+            </p>
+            <p class="news-data">11 января</p>
+
+            <p class="simple-text">
+              В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ
+              МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+            </p>
+            <p class="news-data">18 января</p>
+            <button class="btn">ВСЕ НОВОСТИ</button>
+          </div>
+        </div>
+
+        <div class="container">
+          <h3 class="">ФОТОГАЛЕРЕЯ</h3>
+          <div class="small-container">
+            <img class="photogalery" src="img/photo.png" alt="" />
+            <button class="btn btn-left">НАЗАД</button>
+            <button class="btn btn-right">ВПЕРЕД</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h3 class="">КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+          <div class="small-container">
+            <p class="simple-text">
+              БАРБЕРШОП «БОРОДИНСКИЙ»<br />
+              АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br />
+              ТЕЛЕФОН: +7 (495) 666-02-66
+            </p>
+
+            <p class="simple-text">
+              ВРЕМЯ РАБОТЫ:<br />
+              ПН—ПТ: С 10:00 ДО 22:00<br />
+              СБ—ВС: С 10:00 ДО 19:00
+            </p>
+
+            <button class="btn">КАК ПРОЕХАТЬ</button>
+            <button class="btn btn-right">ОБРАТНАЯ СВЯЗЬ</button>
+          </div>
+        </div>
+
+        <div class="container">
+          <h3 class="">ЗАПИСАТЬСЯ</h3>
+          <div class="small-container">
+            <p class="simple-text">
+              УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ
+              ПОДТВЕРЖДЕНИЯ БРОНИ
+            </p>
+            <form class="form" action="">
+              <label>
+                <p>ДАТА</p>
+                <input
+                  class="simple-input"
+                  type="date"
+                  id="start"
+                  name="trip-start"
+                  value="2020-11-29"
+                  min="2018-01-01"
+                  max="2025-12-31"
+                />
+              </label>
+              <label>
+                <p>ВРЕМЯ</p>
+                <input class="simple-input" type="time" />
+              </label>
+              <label>
+                <p>ВАШЕ ИМЯ</p>
+                <input class="simple-input" type="text" />
+              </label>
+              <label>
+                <p>ТЕЛЕФОН</p>
+                <input
+                  class="simple-input"
+                  type="tel"
+                  pattern="(\+?\d[- .]*){7,13}"
+                  placeholder="+7 123 456-78-90"
+                />
+              </label>
+
+              <input
+                class="btn btn-big"
+                name="submit"
+                value="ОТПРАВИТЬ"
+                type="submit"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-row">
+        <div class="footer-container">
+          <p>
+            БАРБЕРШОП «БОРОДИНСКИЙ»<br />
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br />
+            КАК НАС НАЙТИ?<br />
+            ТЕЛЕФОН: +7 (495) 666-02-66
+          </p>
+        </div>
+
+        <div class="footer-container">
+          <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+          <div class="icons">
+            <a class="icon-vk" href="#"></a>
+            <a class="icon-inst" href="#"></a>
+            <a class="icon-fb" href="#"></a>
+          </div>
+        </div>
+
+        <div class="footer-container">
+          <p>РАЗРАБОТАНО:</p>
+          <p>BY ME!</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
